@@ -1,0 +1,47 @@
+// sass/_contact.scss
+
+.contact {
+  .row {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 1.5rem;
+    align-items: center;
+
+    form {
+      flex: 1 1 40rem;
+      padding: 2rem 2.5rem;
+      box-shadow: 0 0.5rem 1.5rem $shadow-light;
+      border: 0.1rem solid rgba(0, 0, 0, 0.1);
+      background: #fff;
+      border-radius: 0.5rem;
+
+      .box {
+        padding: 1rem;
+        font-size: 1.7rem;
+        color: #333;
+        text-transform: none;
+        border: 0.1rem solid rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+        margin: 0.7rem 0;
+        width: 100%;
+
+        &:focus {
+          border-color: $pink;
+        }
+      }
+
+      textarea {
+        height: 15rem;
+        resize: none;
+      }
+    }
+
+    .image {
+      flex: 1 1 40rem;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,16 +1,6 @@
-$btn-width: sm, md, lg;
-$default-padding: 12px;
 
-@each $width in $btn-width {
-    .btn-#{$width} {
-        padding: $default-padding (
-            $default-padding * 2
-        );
-    background: teal;
-    color: white;
-    border: none;
-    border-radius: ($default-padding * 2);
-}
-
-$default-padding: $default-padding+4px;
-}
+$pink: #e84393;
+$font-family: Verdana, Geneva, Tahoma, sans-serif;
+$transition: 0.2s linear;
+$shadow-light: rgba(0, 0, 0, 0.1);
+$shadow-medium: rgba(0, 0, 0, 0.15);

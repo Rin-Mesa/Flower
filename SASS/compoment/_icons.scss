@@ -1,0 +1,34 @@
+// sass/_icons.scss
+
+.icons-container {
+  background: #eee;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 5rem 0;
+
+  .icons {
+    background: #fff;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex: 1 1 25rem;
+
+    img {
+      height: 5rem;
+      margin-right: 3rem;
+    }
+
+    h3 {
+      color: #333;
+      padding-bottom: 0.5rem;
+      font-size: 1.5rem;
+    }
+
+    span {
+      color: #555;
+      font-size: 1.3rem;
+    }
+  }
+}

@@ -1,0 +1,175 @@
+// sass/_responsive.scss
+
+// Tablets (768px and below)
+@media (max-width: 768px) {
+  section {
+    padding: 2rem 5%;
+  }
+
+  header {
+    padding: 1.5rem 5%;
+
+    .navbar {
+      display: none;
+
+      &.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+
+        a {
+          padding: 1rem 0;
+          font-size: 2.5rem;
+          color: #333;
+          border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+
+    .fa-bars {
+      display: block;
+    }
+  }
+
+  .home {
+    flex-direction: column;
+    text-align: center;
+
+    .content {
+      max-width: 100%;
+
+      h3 {
+        font-size: 4.5rem;
+      }
+
+      span {
+        font-size: 2.5rem;
+      }
+
+      p {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  .about .row {
+    flex-direction: column;
+
+    .video-container, .content {
+      flex: 1 1 100%;
+    }
+  }
+
+  .icons-container {
+    flex-direction: column;
+
+    .icons {
+      flex: 1 1 100%;
+      justify-content: center;
+      text-align: center;
+
+      img {
+        margin: 0 auto 1rem;
+      }
+    }
+  }
+
+  .products .box-container {
+    flex-direction: column;
+
+    .box {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  }
+
+  .review .box-container {
+    flex-direction: column;
+
+    .box {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  }
+
+  .contact .row {
+    flex-direction: column;
+
+    form, .image {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+// Mobile (480px and below)
+@media (max-width: 480px) {
+  html {
+    font-size: 55%;
+  }
+
+  .heading {
+    font-size: 3rem;
+
+    span {
+      font-size: 2.5rem;
+    }
+  }
+
+  .btn {
+    font-size: 1.5rem;
+    padding: 0.8rem 3rem;
+  }
+
+  header {
+    padding: 1rem 3%;
+
+    .logo {
+      font-size: 2.5rem;
+    }
+
+    .icons a {
+      font-size: 2rem;
+      margin-left: 1rem;
+    }
+
+    .fa-bars {
+      font-size: 2.5rem;
+      padding: 0.3rem 1rem;
+    }
+  }
+
+  .home .content {
+    h3 {
+      font-size: 3.5rem;
+    }
+
+    span {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  .products .box-container .box {
+    .image img {
+      height: 20rem;
+    }
+  }
+
+  .review .box-container .box {
+    padding: 2rem 1rem;
+  }
+
+  .contact form .box {
+    font-size: 1.5rem;
+  }
+}
