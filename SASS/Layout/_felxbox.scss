@@ -1,0 +1,14 @@
+$position-item: start, center, end, space-evenly, space-between, space-around;
+.flex {
+    display: flex;
+}
+
+@each $position in $position-item {
+    .justify-content-#{$position}{
+        justify-content: $position;
+    }
+    .align-items-#{$position}{
+        align-items: $position;
+    }
+
+}

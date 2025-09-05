@@ -1,0 +1,25 @@
+.btn-sm {
+    padding: 12px 24px;
+    background: teal;
+    color: #fff;
+    border: none;
+    border-radius: 24px
+}
+
+.btn-md {
+    padding: 16px 32px;
+    background: teal;
+    color: #fff;
+    border: none;
+    border-radius: 32px
+}
+
+.btn-lg {
+    padding: 20px 40px;
+    background: teal;
+    color: #fff;
+    border: none;
+    border-radius: 40px
+}
+
+/*# sourceMappingURL=buttonmin.css.map */
