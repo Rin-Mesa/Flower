@@ -1,10 +1,12 @@
 // sass/main.scss
 
+@import './Layout/grid';
+@import './Layout/felxbox';
 @import './compoment/variables';
 @import './compoment/base';
 @import './compoment/header';
 @import './compoment/home';
-@import './compoment/base';
+@import './compoment/about';
 @import './compoment/icons';
 @import './compoment/products';
 @import './compoment/review';

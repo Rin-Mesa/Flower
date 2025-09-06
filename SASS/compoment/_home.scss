@@ -1,10 +1,11 @@
 // sass/_home.scss
 
+
 .home {
   display: flex;
   align-items: center;
   min-height: 100vh;
-  background: url(./img/360_F_705845685_e1GJvNw3usEWEkxokUGTnWpX42Yvkh10.jpg);
+  background: $background-img;
   background-size: cover;
   background-position: center;
 
@@ -31,3 +32,5 @@
     }
   }
 }
+
+

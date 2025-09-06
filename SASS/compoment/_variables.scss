@@ -1,6 +1,41 @@
 
+
+$primary-color: #333;
+$secondary-color: #555;
+$tertiary-color: #999;
+$background-color: #f9f9f9;
+$border-color: #eee;
+$text-color: #444;
+$color-white: #fff;
 $pink: #e84393;
 $font-family: Verdana, Geneva, Tahoma, sans-serif;
 $transition: 0.2s linear;
 $shadow-light: rgba(0, 0, 0, 0.1);
 $shadow-medium: rgba(0, 0, 0, 0.15);
+$shadow-dark: rgba(0, 0, 0, 0.2);
+$shadow-hover: rgba(0, 0, 0, 0.3);
+$shadow-button: rgba(0, 0, 0, 0.25);
+$shadow-button-hover: rgba(0, 0, 0, 0.4);
+$background-img: url(/img/360_F_705845685_e1GJvNw3usEWEkxokUGTnWpX42Yvkh10.jpg);
+
+@mixin btn {
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 2rem;
+  color: $color-white;
+  background: $primary-color;
+  border-radius: 2rem;
+  text-decoration: none;
+  box-shadow: 0 0.5rem 1rem $shadow-button;
+  transition: $transition;
+
+  &:hover {
+    background: $pink;
+    box-shadow: 0 0.5rem 1rem $shadow-button-hover;
+    transform: translateY(-0.2rem);
+  }
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 0.3rem 0.6rem $shadow-button;
+  }
+}
